@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>Basic HTML5 Form</title>
+
+    <meta name="description" content="TT284 EMA Qu2"/>
+    <meta name="author" content="Harriet Craven"/>
+    <link rel="stylesheet" href="q2a.css"/>
+
+  </head>
+
+  <body>
+    <header>OU Walking Club Admin Application</header>
+
+    <nav>
+      <a href="">Walk Events</a> |
+      <a href="">Other Social Events</a> |
+      <a href="">Membership</a> |
+      <a href="">News</a> |
+      <a href="">Announcements</a>
+    </nav>
+
+    <main>
+
+      <section>
+        <header>Add New Walk Event</header>
+        <form method="post" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="newWalkForm" name="newWalkForm">
+
+          <input type="hidden" name="sessionID" id="sessionID" value="12345678-09ab-1111-cdef"><br>
+
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" placeholder="" required maxlength="20" minlength="5"  value="">
+          <br>
+
+          <!-- TODO: Add min as present day -->
+          <!--  type date? -->
+          <label for="date">Date: </label>
+          <input type="text" name="date" id="date" required>
+          <br>
+
+          <label for="time">Time: </label>
+          <input type="text" name="time" id="time" required>
+          <br>
+
+          <!--  assuming maxlength -->
+          <label for="meet">Meet: </label>
+          <input type="text" name="meet" id="meet" placeholder="" required maxlength="50" minlength="0"  value="">
+          <br>
+
+          <label for="distance">Distance: </label>
+          <input type="number" name="distance" id="distance" required min="0">
+          <br>
+
+          <label for="note">Note: </label>
+          <input type="text" name="note" id="note" placeholder="" maxlength="200" minlength="10"  value="">
+          <br>
+
+          <!-- TODO add status? -->
+
+          <input type="submit" name="submit" value="Submit" />
+
+        </form>
+      </section>
+    </main>
+
+    <footer>FOOTER</<footer>
+  </body>
+
+</html>
