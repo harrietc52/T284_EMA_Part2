@@ -1,11 +1,113 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  border-style: solid;
+  border-width: 2px;
+  padding: 20px;
 }
 
-section {
-  padding: 3px;
+div.grid {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
 
-input {
-  margin: 6px;
+div.grid .logo {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+div.grid .logo img {
+  grid-column: 1;
+  grid-row: 1;
+  border-style: solid;
+  border-width: 2px;
+  /* width: 80%; */
+}
+
+div.grid .header {
+  grid-column: 2 / 5;
+  grid-row: 1;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+div.grid .credentials {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+div.grid .credentials input {
+  font-size: 1rem;
+}
+
+div.grid .navbar {
+  grid-column: 2 / 5;
+  grid-row: 2;
+  height: 4rem;
+}
+
+div.grid .navbar button {
+  font-size: 2rem;
+  background-color: #D3D3D3;
+}
+
+div.grid .main {
+  grid-column: 3 / 5;
+  grid-row: 3;
+}
+
+div.grid .main form {
+  /* Use border-box sizing to set width ignoring padding/border */
+  box-sizing: border-box;
+  /* Never be wider than the space available */
+  max-width: 100%;
+}
+
+div.grid .main legend {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+div.grid .main .form-group {
+  /* Use border-box sizing to set width ignoring padding/border */
+  box-sizing: border-box;
+  /* Never be wider than the space available */
+  max-width: 100%;
+  /* Nicer spacing */
+  margin: 0.5rem;
+}
+
+div.grid .main label {
+  /* Display labels inline with inputs -
+     but otherwise present them like a <div> element */
+  display: inline-block;
+  /* Use border-box sizing to set width ignoring padding/border */
+  box-sizing: border-box;
+  /* Set a minimum width to keep labels and inputs in line vertically */
+  min-width: 10rem;
+  /* Never be wider than the space available */
+  max-width: 100%;
+}
+
+div.grid .main input {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+div.grid .main #cal {
+  max-width: 8%;
+}
+
+div.grid .main #submit {
+  float: right;
+  font-size: 1.5rem;
+  background-color: #D3D3D3;
+}
+
+div.grid .footer {
+  grid-column: 1;
+  grid-row: 4;
+  font-size: 0.5rem;
 }
