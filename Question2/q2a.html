@@ -20,15 +20,16 @@
           OU Walking Club Admin Application
         </h1>
       </div>
+      <!--  TODO add some sort of currently posisition navigation -->
       <div class="credentials">
         <input type="text" name="username" id="username" value="username">
         <input type="password" name="password" id="password" value="password">
-        <input type="submit" name="logout" value="Log Out" />
+        <input id="submit" type="submit" name="logout" value="Log Out" />
       </div>
       <div class="navbar">
         <nav>
           <button>Walk Events</button>
-          <button>Other Social Events</button>
+          <button>Other Events</button>
           <button>Membership</button>
           <button>News Items</button>
           <button>Announcements</button>
@@ -41,7 +42,7 @@
         <div class="form">
           <form method="post" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="newWalkForm" name="newWalkForm">
             <fieldset>
-              <legend>Add New Walk Event</legend>
+              <legend>New Walk</legend>
               <input type="hidden" name="sessionID" id="sessionID" value="12345678-09ab-1111-cdef"><br>
 
               <div class="form-group">
@@ -57,7 +58,7 @@
               </div>
 
               <div class="form-group">
-                <label for="time">Time: </label>
+                <label for="time">Start Time: </label>
                 <input type="text" name="time" id="time" required>
               </div>
 
@@ -73,7 +74,7 @@
               </div>
 
               <div class="form-group">
-                <label for="note">Note: </label>
+                <label for="note">Notes: </label>
                 <input type="text" name="note" id="note" placeholder="" maxlength="200" value="">
               </div>
 
