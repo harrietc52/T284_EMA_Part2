@@ -1,61 +1,64 @@
 body {
-  /* OU ICE fonts */
-  /* font-family: Tahoma,"Lucida Grande", Arial, Helvetica, sans-serif; */
-  border-style: solid;
-  border-width: 1px;
+  font-family: Tahoma,"Lucida Grande", Arial, Helvetica, sans-serif;
   padding: 10px;
+  margin: 0px;
 }
 
-div.grid {
+h1, h2, h3 {
+  margin: 0px;
+}
+
+.grid {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
-  grid-gap: 0.5rem;
+  grid-gap: 0.5em;
 }
 
-div.grid .logo {
+.grid .logo {
   grid-column: 1;
   grid-row: 1;
 }
 
-div.grid .logo img {
+.grid .logo img {
   width: 100%;
   border-style: solid;
   border-width: 1px;
 }
 
-div.grid .heading {
+.grid .heading {
   grid-column: 2;
   grid-row: 1;
 }
 
-div.grid .credentials {
+.grid .credentials {
   grid-column: 3;
   grid-row: 1;
 }
 
-div.grid .credentials input {
+.grid .credentials input {
   border: solid;
-  border-width: 1px;
+  border-width: 0.5px;
   margin: 1px;
+  float: right;
 }
 
-div.grid .credentials #submit{
+.grid .credentials #submit{
   background-color: #D3D3D3;
 }
 
-div.grid .imageWideMedRectangle {
+.grid .imageWideMedRectangle {
   grid-column: 1 / 4;
   grid-row: 2;
 }
 
-div.grid .imageWideMedRectangle img {
+.grid .imageWideMedRectangle img {
   width: 100%;
   height: 100px;
   border-style: solid;
   border-width: 1px;
 }
 
-div.grid .navbar {
+.grid .navbar {
   grid-column: 1 / 5;
   grid-row: 3;
   border-top: 1px solid;
@@ -63,89 +66,80 @@ div.grid .navbar {
   padding: 5px;
 }
 
-div.grid .navbar button {
+.grid .navbar button {
   background-color: #D3D3D3;
+  font-size: 1.5em;
 }
 
-div.grid .breadcrumbs {
+.grid .breadcrumbs {
   grid-column: 1 / 5;
   grid-row: 4;
   border-bottom: 1px solid;
   padding: 5px;
 }
 
-div.grid .pageheading {
-  grid-column: 1;
+.grid .pageheading {
+  grid-column: 1 / 5;
   grid-row: 5;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
-div.grid .divider {
+.grid .divider {
   grid-column: 1 / 5;
   grid-row: 6;
 }
 
-div.grid .divider hr {
+.grid .divider hr {
   border-width: medium;
 }
 
-div.grid .form {
+.grid .form {
   grid-column: 2 / 3;
   grid-row: 7;
+  border: solid;
+  border-width: thin;
 }
 
-/* div.grid form { */
-  /* Use border-box sizing to set width ignoring padding/border */
-  /* box-sizing: border-box; */
-  /* Never be wider than the space available */
-  /* max-width: 100%; */
-/* } */
-
-div.grid .form .form-group {
-  /* Use border-box sizing to set width ignoring padding/border */
-  /* box-sizing: border-box; */
-  /* Never be wider than the space available */
-  /* max-width: 100%; */
-  /* Nicer spacing */
-  margin: 0.5rem;
+.grid .form .form-group {
+  margin: 0.5em;
 }
 
-div.grid .form label {
+.grid .form label {
   /* Display labels inline with inputs -
      but otherwise present them like a <div> element */
   display: inline-block;
   /* Use border-box sizing to set width ignoring padding/border */
   box-sizing: border-box;
   /* Set a minimum width to keep labels and inputs in line vertically */
-  min-width: 10rem;
-  /* Never be wider than the space available */
-  max-width: 100%;
+  min-width: 10em;
 }
 
-div.grid .form input {
-  font-family: sans-serif;
+.grid .form input {
   border: solid;
   border-width: 1px;
+  font-size: 1.5em;
 }
 
-div.grid .form #cal {
+.grid .form #cal {
   max-width: 10%;
 }
 
-div.grid .form #cancel {
+.grid .form #cancel {
   float: right;
   background-color: #D3D3D3;
-  margin: 1px;
+  margin: 2px;
+  font-size: 1em;
 }
 
-div.grid .form #create {
+.grid .form #create {
   float: right;
   background-color: #D3D3D3;
-  margin: 1px;
+  margin: 2px;
+  font-size: 1em;
 }
 
-div.grid .footer {
+.grid .footer {
   grid-column: 1;
   grid-row: 8;
-  font-size: 0.5rem;
+  font-size: 0.5em;
 }
