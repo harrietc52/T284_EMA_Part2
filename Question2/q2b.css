@@ -170,7 +170,7 @@ h1, h2, h3 {
     grid-row: 1;
   }
 
-  .grid .credentials #username {
+  .grid .credentials #email {
     display: none;
   }
 
@@ -189,7 +189,8 @@ h1, h2, h3 {
   }
 
   .grid .navbar button {
-    font-size: 0.8em;
+    font-size: 0.7em;
+    border-color: black;
   }
 
   .grid .breadcrumbs {

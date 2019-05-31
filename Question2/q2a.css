@@ -68,7 +68,8 @@ h1, h2, h3 {
 
 .grid .navbar button {
   background-color: #D3D3D3;
-  font-size: 1.5em;
+  font-size: 1em;
+  border-color: black;
 }
 
 .grid .breadcrumbs {
@@ -117,7 +118,7 @@ h1, h2, h3 {
 .grid .form input {
   border: solid;
   border-width: 1px;
-  font-size: 1.5em;
+  width: 70%;
 }
 
 .grid .form #cal {
@@ -129,6 +130,7 @@ h1, h2, h3 {
   background-color: #D3D3D3;
   margin: 2px;
   font-size: 1em;
+  width: 20%;
 }
 
 .grid .form #create {
@@ -136,6 +138,7 @@ h1, h2, h3 {
   background-color: #D3D3D3;
   margin: 2px;
   font-size: 1em;
+  width: 20%;
 }
 
 .grid .footer {
