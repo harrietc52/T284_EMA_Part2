@@ -190,7 +190,7 @@ h1, h2, h3 {
   .grid .navbar {
     grid-column: 1;
     grid-row: 3;
-    padding: 1px;
+    padding: 4px;
   }
 
   .grid .navbar button {
@@ -236,10 +236,12 @@ h1, h2, h3 {
 
   .grid .form #cancel {
     font-size: 1em;
+    width: 100%;
   }
 
   .grid .form #create {
     font-size: 1em;
+    width: 100%;
   }
 
 }
