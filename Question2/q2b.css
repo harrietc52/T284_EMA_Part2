@@ -158,16 +158,6 @@ h1, h2, h3 {
     width: 2em;
   }
 
-  .grid .heading {
-    grid-column: 1;
-    grid-row: 2;
-    font-size: 0.7em;
-  }
-
-  .grid .heading .description {
-    display: none;
-  }
-
   .grid .credentials {
     grid-column: 1;
     grid-row: 1;
@@ -178,6 +168,16 @@ h1, h2, h3 {
   }
 
   .grid .credentials #password {
+    display: none;
+  }
+
+  .grid .heading {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 0.7em;
+  }
+
+  .grid .heading .description {
     display: none;
   }
 
@@ -209,31 +209,22 @@ h1, h2, h3 {
   }
 
   .grid .divider {
-    grid-column: 1;
-    grid-row: 5;
-  }
-
-  .grid .divider hr {
-    border-width: thin;
-    margin: 0px;
+    display: none;
   }
 
   .grid .form {
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 5;
   }
 
   .grid .form label {
     display: block;
-    /* Use border-box sizing to set width ignoring padding/border */
-    box-sizing: border-box;
-    width: 100%;
   }
 
   .grid .form input {
     border-width: 0.5px;
     width: 100%;
-    /* font-size: 1em; */
+    font-size: 1em;
   }
 
   .grid .form #cal {
