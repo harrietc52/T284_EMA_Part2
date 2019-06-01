@@ -10,7 +10,7 @@ h1, h2, h3 {
 
 .grid {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-columns: 0.5fr 2fr 0.5fr; /* Set 3 columns */
   grid-gap: 0.5em;
 }
 
@@ -43,7 +43,7 @@ h1, h2, h3 {
 }
 
 .grid .credentials #submit{
-  background-color: #D3D3D3;
+  background-color: #D3D3D3; /* grey */
 }
 
 .grid .imageWideMedRectangle {
@@ -67,7 +67,7 @@ h1, h2, h3 {
 }
 
 .grid .navbar button {
-  background-color: #D3D3D3;
+  background-color: #D3D3D3; /* grey */
   font-size: 1.3em;
   border-color: black;
 }
@@ -106,8 +106,7 @@ h1, h2, h3 {
 }
 
 .grid .form label {
-  /* Display labels inline with inputs -
-     but otherwise present them like a <div> element */
+  /* Display labels inline with inputs */
   display: inline-block;
   /* Use border-box sizing to set width ignoring padding/border */
   box-sizing: border-box;
@@ -129,7 +128,7 @@ h1, h2, h3 {
 
 .grid .form #cancel {
   float: right;
-  background-color: #D3D3D3;
+  background-color: #D3D3D3; /* grey */
   margin: 2px;
   font-size: 1.5em;
   width: 20%;
@@ -137,7 +136,7 @@ h1, h2, h3 {
 
 .grid .form #create {
   float: right;
-  background-color: #D3D3D3;
+  background-color: #D3D3D3; /* grey */
   margin: 2px;
   font-size: 1.5em;
   width: 20%;

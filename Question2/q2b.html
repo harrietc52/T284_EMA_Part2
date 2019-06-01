@@ -9,12 +9,15 @@
     <meta name="author" content="Harriet Craven"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Import Q2b CSS stylesheet -->
     <link rel="stylesheet" href="q2b.css"/>
   </head>
 
   <body>
+    <!-- CSS Grid layout -->
     <div class="grid">
 
+      <!-- Open University's logo -->
       <div class="logo">
         <img src="imageLargeSquare.jpg" alt="The Open University's logo">
       </div>
@@ -28,16 +31,19 @@
         </h2>
       </div>
 
+      <!-- Log out button -->
       <div class="credentials">
         <input type="text" name="email" id="email" value="email">
         <input type="password" name="password" id="password" value="password">
         <input id="logout" type="submit" name="logout" value="Log Out" />
       </div>
 
+      <!-- Break up space with image -->
       <div class="imageWideMedRectangle">
         <img src="imageWideMedRectangle.jpg" alt="placeholder for wide rectangle image">
       </div>
 
+      <!-- Global navigation for main features -->
       <div class="navbar">
         <nav>
           <button>Walk Events</button> |
@@ -48,12 +54,14 @@
         </nav>
       </div>
 
+      <!-- Page navigation -->
       <div class="breadcrumbs">
         <a href="">Home </a> >
         <a href="">Walk Events </a> >
         <a href="">Create Walk Event </a>
       </div>
 
+      <!-- Section heading -->
       <div class="pageheading">
         <h3> Create Walk Event </h3>
       </div>
@@ -62,44 +70,55 @@
         <hr>
       </div>
 
+      <!-- Start of the form -->
       <div class="form">
+        <!-- Form POSTs data to given url -->
         <form method="post" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="newWalkForm" name="newWalkForm">
+          <!-- Include hidden session id -->
           <input type="hidden" name="sessionID" id="sessionID" value="12345678-09ab-1111-cdef">
 
+          <!-- Name field -->
           <div class="form-group">
             <label for="name">Name *</label>
-            <input type="text" name="name" id="name" placeholder="" required maxlength="20" minlength="5"  value="">
+            <input type="text" name="name" id="name" placeholder="" required minlength="5"  value="">
           </div>
 
+          <!-- Date field -->
           <div class="form-group">
             <label>Date *</label>
             <img id="cal" src="cal.png" alt="image of a calender">
           </div>
 
+          <!-- Start time field -->
           <div class="form-group">
             <label for="time">Start Time *</label>
             <input type="text" name="time" id="time" required>
           </div>
 
+          <!-- Meet field -->
           <div class="form-group">
             <label for="meet">Meet *</label>
             <input type="text" name="meet" id="meet" placeholder="" required maxlength="50" minlength="0"  value="">
           </div>
 
+          <!-- Distance field -->
           <div class="form-group">
             <label for="distance">Distance (miles)*</label>
             <input type="number" name="distance" id="distance" required min="0">
           </div>
 
+          <!-- Notes field (optional) -->
           <div class="form-group">
             <label for="note">Notes</label>
             <input type="text" name="note" id="note" placeholder="" maxlength="200" value="">
           </div>
 
+          <!-- Create button -->
           <div class="form-group">
             <input id="create" type="submit" name="create" value="Create" />
           </div>
 
+          <!-- Cancel button -->
           <div class="form-group">
             <input id="cancel" type="submit" name="cancel" value="Cancel" />
           </div>
